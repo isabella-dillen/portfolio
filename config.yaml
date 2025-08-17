@@ -1,0 +1,27 @@
+baseURL: "/"
+title: "Isabella Dillen"
+languageCode: "nl-be"
+module:
+  imports:
+    - path: github.com/wowchemy/starter-hugo-academic
+params:
+  description: "Kunstschaatsen • Dans • Technologie"
+menus:
+  main:
+    - name: "Sport"
+      url: "/sport/"
+      weight: 10
+    - name: "Tech"
+      url: "/tech/"
+      weight: 20
+    - name: "School"
+      url: "/school/"
+      weight: 30
+    - name: "Blog"
+      url: "/post/"
+      weight: 40
+    - name: "Over mij"
+      url: "/about/"
+      weight: 50
+outputs:
+  home: ["HTML", "RSS", "JSON"]
