@@ -1,11 +1,16 @@
 baseURL: "/"
 title: "Isabella Dillen"
 languageCode: "nl-be"
+paginate: 10
+
+# Gebruik Hugo Modules i.p.v. lokale theme-map
 module:
   imports:
-    - path: github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy
-params:
-  description: "Kunstschaatsen • Dans • Technologie"
+    - path: github.com/adityatelange/hugo-PaperMod
+
+# Vertel Hugo welk theme te gebruiken
+theme: "hugo-PaperMod"
+
 menus:
   main:
     - name: "Sport"
@@ -23,5 +28,3 @@ menus:
     - name: "Over mij"
       url: "/about/"
       weight: 50
-outputs:
-  home: ["HTML", "RSS", "JSON"]
